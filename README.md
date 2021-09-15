@@ -1,10 +1,10 @@
-# Bitcoin.com Paper Wallet
+# eCash (XEC) Paper Wallet
 
-The Bitcoin.com Paper Wallet Landing Page
+The eCash (XEC) Paper Wallet Landing Page
 
-A client-side Bitcoin Cash (BCH) wallet generator producing customizable paper wallets.
+A client-side eCash (XEC) wallet generator producing customizable paper wallets.
 
-The Bitcoin.com Paper Wallet is based on the open source [bitaddress.org repository.](https://github.com/pointbiz/bitaddress.org) Private Keys are generated client-side. For better security, download a local copy and run on an offline machine. 
+The eCash Paper Wallet is based on the open source [bitaddress.org repository.](https://github.com/pointbiz/bitaddress.org) Private Keys are generated client-side. For better security, download a local copy and run on an offline machine.
 
 The bitaddress.org software is available under The MIT License (MIT) Copyright (c) 2011-2013 bitaddress.org
 
@@ -13,4 +13,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
