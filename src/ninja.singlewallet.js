@@ -22,7 +22,7 @@
 				key.setCompressed(true);
 				var bitcoinAddress = key.getBitcoinAddress();
 				var privateKeyWif = key.getBitcoinWalletImportFormat();
-				document.getElementById("btcaddress").innerHTML = bitcoinAddress;
+				document.getElementById("btcaddress").innerHTML = 'bitcoinAddress;
 				document.getElementById("btcprivwif").innerHTML = privateKeyWif;
 				var keyValuePair = {
 					"qrcode_public": 'bitcoinAddress',

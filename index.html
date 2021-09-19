@@ -10569,7 +10569,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
         var cashbitcoinAddress = ecashAddress;
 
         // Remove "ecash:" prefix
-        cashbitcoinAddress = cashbitcoinAddress.slice(6);
+        //cashbitcoinAddress = cashbitcoinAddress.slice(6);
 
         // Re-assign eCash address
         bitcoinAddress = cashbitcoinAddress;
@@ -10720,11 +10720,11 @@ ninja.wallets.paperwallet = {
           // address = address.slice(12);
 
 					// Remove "ecash:" prefix
-					address = ecashAddress.slice(6);
+					//address = ecashAddress.slice(6);
 
 					// END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 
-					ninja.wallets.paperwallet.showArtisticWallet(idPostFix, address, encryptedKey);
+					ninja.wallets.paperwallet.showArtisticWallet(idPostFix, ecashAddress, encryptedKey);
 				}
 				else {
 
@@ -10742,11 +10742,11 @@ ninja.wallets.paperwallet = {
           // address = address.slice(12);
 
 					// Remove "ecash:" prefix
-					address = ecashAddress.slice(6);
+					//address = ecashAddress.slice(6);
 
           // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 
-					ninja.wallets.paperwallet.showWallet(idPostFix, address, encryptedKey);
+					ninja.wallets.paperwallet.showWallet(idPostFix, ecashAddress, encryptedKey);
 				}
 			});
 		}
@@ -10771,11 +10771,11 @@ ninja.wallets.paperwallet = {
 				// address = address.slice(12);
 
 				// Remove "ecash:" prefix
-				address = ecashAddress.slice(6);
+				//address = ecashAddress.slice(6);
 
         // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 
-				ninja.wallets.paperwallet.showArtisticWallet(idPostFix, address, privateKeyWif);
+				ninja.wallets.paperwallet.showArtisticWallet(idPostFix, ecashAddress, privateKeyWif);
 			}
 			else {
 
@@ -10793,10 +10793,10 @@ ninja.wallets.paperwallet = {
 				// address = address.slice(12);
 
 				// Remove "ecash:" prefix
-				address = ecashAddress.slice(6);
+				//address = ecashAddress.slice(6);
         // END CASH ADDRESS IMPLEMENTATION FOR PAPER WALLET
 
-				ninja.wallets.paperwallet.showWallet(idPostFix, bitcoinAddress, privateKeyWif);
+				ninja.wallets.paperwallet.showWallet(idPostFix, ecashAddress, privateKeyWif);
 			}
 		}
 	},
@@ -10917,7 +10917,7 @@ ninja.wallets.paperwallet = {
 								"<div id='qrcode_private" + i + "' class='qrcode_private'></div>" +
 								//"<div style='color:"+ addressColor +"' class='btcaddress' id='btcaddress" + i + "'></div>" +
 								// Use SVG instead of DIV to prevent browser printing White colors as Grey or Black by default
-								"<svg height='42' width='392' style='fill:" + addressColor + "' class='btcaddress'><text x='0' y='15' font-size='16px' id='btcaddress" + i + "' fill='" + addressColor + "'></text></svg>" +
+								"<svg height='42' width='392' style='fill:" + addressColor + "' class='btcaddress'><text x='0' y='15' font-size='14px' id='btcaddress" + i + "' fill='" + addressColor + "'></text></svg>" +
 
 								//"<div class='" + keyelement + "' id='" + keyelement + i + "'></div>" +
 								"<svg height='42' width='392' style='fill:" + addressColor + "' class='" + keyelement + "'><text id='" + keyelement + i + "' x='0' y='15' font-size='10px' fill='" + addressColor + "'></text></svg>" +
