@@ -1,0 +1,25 @@
+Forked from https://github.com/Bitcoin-com/paperwallet.bitcoin.com
+
+As at 19th September 2021:
+
+**General changes**
+- deleted the bitcoin.com CNY promotion related artefacts (e.g. cashwallet-cny.html, the entire /hongbao-chinese-new-year-promotion/ folder), index.html and renamed the original cashwallet.html to index.html
+- deleted all but one of the paper wallet background images which I overriden with my own eCash branded image
+
+**Changes within index.html**
+- imported BytesOfMan's ecashaddrjs in header for global access (line 69)
+- traced all instances where the value of bitcoinAddress (the public address displayed on UI) was assigned prior to QR generation, which led me to update the generateNewAddressAndKey function (line 10555) and generateNewWallet function (line 10702) to encode the BCH cash address into the eCash address using the ecashaddrjs library
+- I originally sliced the ecash prefix (e.g. line 10723) to be consistent with the original wallet code but turns out Cashtab's QR scanner has trouble reading inputs without that prefix, hence commenting out my own code slicing the prefix (lines 10572, 10723, 10745, 10774, 10796) so the public addresses show up with 'ecash:..." on UI
+- Reduced eCash address font (line 10920) from 16px down to 14px due to the addition of the 'ecash:...' prefix now displayed which needs extra space
+- no change to QR generation logic as it simply takes the ecash address as input instead of the bch cash address
+- no change to private key generation logic, including BIP38 encryption logic
+- commented out custom XEC amount dropdown options (line 7322)
+- branding/UI changes such as removing the bitcoin.com banner, changing the css colour scheme to match eCash branding and commenting out all other wallet background image options (line 10863) for now
+
+**Manual pre-production tests**
+- check the ecash public address and private key corresponds to generated QR codes
+- sending funds to paper address via cashtab QR scanner
+- sending funds to paper address via electrumABC (pasting in eCash address)
+- importing paper wallet private key into electrumABC
+- create a BIP38 encrypted paper wallet
+- importing a BIP38 encrypted paper wallet into electrumABC
