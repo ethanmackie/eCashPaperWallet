@@ -25,7 +25,7 @@
 				document.getElementById("btcaddress").innerHTML = 'bitcoinAddress;
 				document.getElementById("btcprivwif").innerHTML = privateKeyWif;
 				var keyValuePair = {
-					"qrcode_public": 'bitcoinAddress',
+					"qrcode_public": bitcoinAddress,
 					"qrcode_private": privateKeyWif
 				};
 				qrCode.showQrCode(keyValuePair, 4);
