@@ -7230,6 +7230,17 @@ input[type=checkbox] { position: relative; z-index: 20; }
 								<img src="img/style2_inksaver.png">
 							</div>
 						</div>
+						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-left">
+							<div onclick="designConfirmed(this)" data-wallet-skin="e.cash style" class="confirm-design confirm-design-white">
+								Select and Continue
+							</div>
+							<div class="style-label">
+								e.cash style
+							</div>
+							<div class="style-example">
+								<img src="img/style3darkblue.png">
+							</div>
+						</div>
 						<!-- add additional templates here
 						<div onmouseover="toggleSelectedDesign(this)" onclick="toggleSelectedDesign(this)" class="style-col sc-right">
 							<div onclick="designConfirmed(this)" data-wallet-skin="inksaver" class="confirm-design">
@@ -10869,12 +10880,20 @@ ninja.wallets.paperwallet = {
       //base64 encoded version:
       break;
 
+		case 'e.cash style':
+      //file resource version:
+      image = 'img/style3darkblue.png';
+			addressColor='#ffffff;'
+			lockArtColor='#0000ff;'
+	  	lockArtBgColor='#fff;'
+      //base64 encoded version:
+      break;
+
     default:
 	    //file resource version:
-	    image = 'style2_inksaver.png'
+	    //image = 'img/style2_inksaver.png'
 	    // Base64 encoded version:
     }
-
 
 		// BCH denomination, default is any, so blank
     var denomBCH = ''

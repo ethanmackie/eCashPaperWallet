@@ -4,7 +4,7 @@ The eCash (XEC) Paper Wallet Landing Page
 
 A client-side eCash (XEC) wallet generator producing customizable paper wallets.
 
-The eCash Paper Wallet is based on the open source [bitaddress.org repository.](https://github.com/pointbiz/bitaddress.org) Private Keys are generated client-side. For better security, download a local copy and run on an offline machine.
+The eCash Paper Wallet is based on the open source [bitaddress.org repository.](https://github.com/pointbiz/bitaddress.org) and [Bitcoin.com paper wallet.](https://github.com/Bitcoin-com/paperwallet.bitcoin.com) Private Keys are generated client-side. For better security, download a local copy and run on an offline machine.
 
 The bitaddress.org software is available under The MIT License (MIT) Copyright (c) 2011-2013 bitaddress.org
 

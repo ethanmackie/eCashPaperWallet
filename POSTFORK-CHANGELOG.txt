@@ -1,5 +1,16 @@
 Forked from https://github.com/Bitcoin-com/paperwallet.bitcoin.com
 
+
+As at 22nd September 2021:
+**General Changes**
+- added tutorial images to help beginners who want to test their new paper wallet styling
+- added 2nd paper wallet style image 'style3darkblue.png'
+- deleted additional prefork promotional CNY artefacts
+
+**Changes within index.html**
+- added 2nd paper wallet style option for 'e.cash style'
+
+
 As at 19th September 2021:
 
 **General changes**
