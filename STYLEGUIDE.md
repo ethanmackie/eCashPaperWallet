@@ -2,7 +2,7 @@
 
 If you'd like to contribute new design options for this wallet, but don't know how to test whether it fits properly with the generated output, then follow the instructions below:
 
-1. Download a [zip of the eCash paper wallet](https://github.com/ethanmackie/eCashPaperWallet/blob/main/master.zip)
+1. Download a [zip of the eCash paper wallet](https://github.com/ethanmackie/eCashPaperWallet/raw/main/master.zip)
 
 2. Go to the /img/ folder and replace "style2_inksaver.png" with your own style image. This effectively changes the 'Default' style option to your design.
 
